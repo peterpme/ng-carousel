@@ -8,9 +8,7 @@
     .carousel-container {
       overflow: hidden;
       height: 300px;
-    }
-    .carousel-belt {
-      position: absolute;
+      width: 600px;
     }
     .arrow {
       display: inline-block;
@@ -19,17 +17,34 @@
       height: 30px;
       font-size: 30px;
     }
+
+    .carousel-item {
+      float: left;
+    }
+
+    .carousel-item:nth-child(1) {
+      background: #eee;
+    }
+    .carousel-item:nth-child(2) {
+      background: #ddd;
+    }
+    .carousel-item:nth-child(3) {
+      background: #aaa;
+    }
+    .carousel-item:nth-child(4) {
+      background: #bbb;
+    }
   </style>
 </head>
 
 <body>
 
-<div class='carousel-container' data-angular-carousel>
+<div class='carousel-container' data-angular-carousel data-arrow-threshold='2' data-views-per-slide='3'>
   <div class='carousel-belt'>
-    <div class='carousel-item'>One</div>
-    <div class='carousel-item'>Two</div>
-    <div class='carousel-item'>Three</div>
-    <div class='carousel-item'>Four</div>
+    <div class='carousel-item'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore explicabo distinctio natus! Deleniti laboriosam animi, temporibus illum aliquam eos recusandae nihil, accusantium vel omnis impedit aspernatur autem vero distinctio repellendus.</div>
+    <div class='carousel-item'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio inventore ipsa totam recusandae earum atque, cupiditate minima odit voluptates nihil. Tempore voluptas magnam, autem ipsum provident ab dolor maxime corrupti.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione sapiente praesentium, perspiciatis mollitia. Nemo, quisquam velit voluptatum culpa dolorem iure, aspernatur eum corrupti cupiditate ea odit quaerat inventore ducimus dolore!</div>
+    <div class='carousel-item'> sit amet, consectetur adipisicing elit. Enim officia quam sequi ipsam laudantium assumenda, harum ducimus nam omnis, et saepe. Ad quibusdam dolorum repudiandae corrupti accusantium quasi impedit? Officia!</div>
+    <div class='carousel-item'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dignissimos, incidunt veniam ipsum velit voluptate dolore culpa at deserunt, ad perferendis ullam itaque, iste, fugit animi repudiandae obcaecati reiciendis error.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut veniam ad quo assumenda vero, nam voluptate molestiae accusantium hic qui enim nemo maiores in impedit quae sit. Fugit, sit, dolorem!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur aut temporibus, quia earum sint tempore aspernatur nihil dolores similique quas, nam doloribus doloremque labore! Rem ea magni, quaerat. Iusto, quia.</div>
   </div>
 
   <a class='arrow arrow-left'><i class='fa fa-angle-left'></i></a>
