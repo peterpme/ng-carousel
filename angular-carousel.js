@@ -1,6 +1,6 @@
 (function () {
-    angular.module('angular-carousel-directive', [])
-    .directive('angular-carousel', ['$log', function ($log) {
+    angular.module('angular-carousel', [])
+    .directive('ng-carousel', ['$log', function ($log) {
 
         function Carousel (carouselBelt) {
             this.carouselBelt = carouselBelt;
