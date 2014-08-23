@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html ng-app='example'>
+<head>
+  <title>Angular Carousel Example</title>
+
+  <style>
+  </style>
+</head>
+
+<body>
+
+<div class='carousel-container' data-angular-carousel>
+  <div class='carousel-belt'>
+    <div class='carousel-item'>One</div>
+    <div class='carousel-item'>Two</div>
+    <div class='carousel-item'>Three</div>
+    <div class='carousel-item'>Four</div>
+  </div>
+
+  <a class='arrow arrow-left'><i class='fa fa-angle-left'></i></a>
+  <a class='arrow arrow-right'><i class='fa fa-angle-right'></i></a>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.angularjs.org/1.2.21/angular.js"></script>
+<script src='angular-carousel.js'></script>
+
+<script>
+  var app = angular.module('example', ['angular-carousel']);
+</script>
+</body>
+</html>
