@@ -1,16 +1,18 @@
 (function () {
     angular.module('angular-carousel', [])
-    .directive('ng-carousel', ['$log', function ($log) {
+    .directive('angularCarousel', [function () {
 
-        function Carousel (carouselBelt) {
-            this.carouselBelt = carouselBelt;
+        function Carousel (element) {
+            this.element = element;
 
             this.currentIndex = 0;
-            this.arrows = element.find('.arrow', element);
 
-            thix.maxLength = this.belt.find('> div', belt).length;
-            this.slides = belt.find('.carousel-item', belt);
-            this.belt.width((this.maxLength * 100) + '%');
+            this.arrows = this.element.find('.arrow', this.element);
+            this.carouselBelt = this.element.find('.carousel-belt');
+
+            this.maxLength = this.carouselBelt.find('> div', this.carouselBelt).length;
+            this.slides = this.carouselBelt.find('.carousel-item', this.carouselBelt);
+            this.carouselBelt.width((this.maxLength * 100) + '%');
 
             this.requireArrows();
         }
@@ -38,7 +40,7 @@
             },
 
             requireArrows: function () {
-                if (thix.maxLength <= this.arrowLimit) {
+                if (this.maxLength <= this.arrowLimit) {
                     this.arrows.hide();
                 }
             }
@@ -48,13 +50,13 @@
         return {
             restrict: 'A',
             link: function (scope, element, attrs) {
-                $log.info('[ng-carousel] init');
+              console.log('[ng-carousel] init');
 
                 var belt = angular.element('.carousel-belt', element),
                     leftArrow = angular.element('> .arrow-left', element),
                     rightArrow = angular.element('> .arrow-right', element);
 
-                    var carousel = new Carousel(belt);
+                    var carousel = new Carousel(element);
 
                     rightArrow.on('click', element, function (e) {
                         e.preventDefault();
