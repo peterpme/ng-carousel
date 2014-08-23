@@ -11,10 +11,10 @@
     "angular-logger" : "^1.0.0",
     "angular" : null
   },
-  "keywors" : {
+  "keywors" : [
     "carousel",
     "slider"
-  },
+  ],
   "ignore": [
     "**/.*",
     "node_modules",
