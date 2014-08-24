@@ -23,6 +23,17 @@ var app = angular.module('MyApp', [
 ]);
 ```
 
+### Depdencies
+
+- jQuery (for transitions)
+- I use Font-Awesome in the example, but this is not included in the project.
+
+Make sure you reference the script in your javascript:
+
+```js
+<script src="bower_components/ng-carousel/angular-carousel.js"></script>
+```
+
 ## Usage
 
 Make sure your `carousel-container` includes:
@@ -46,10 +57,6 @@ data-angular-carousel
   <a class='arrow arrow-right'><i class='fa fa-angle-right'></i></a>
 </div>
 ```
-
-
-### Example
-
 
 ### TODO
 
