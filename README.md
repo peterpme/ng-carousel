@@ -23,7 +23,7 @@ var app = angular.module('MyApp', [
 ]);
 ```
 
-### Depdencies
+### Dependencies
 
 - jQuery (for transitions)
 - I use Font-Awesome in the example, but this is not included in the project.
