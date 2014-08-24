@@ -9,8 +9,7 @@
   "license": "Apache",
   "dependencies" : {
     "angular-logger" : "^1.0.0",
-    "angular" : null,
-    "font-awesome" null
+    "angular" : null
   },
   "keywors" : [
     "carousel",
