@@ -3,7 +3,7 @@
 An AngularJS directive for a creating a simple carousel running in your application.
 
 ## Browser Support
-- IE9+ (no transitions)
+- IE7+ (no transitions)
 - IE10+ with transitions
 - Chrome, Safari, Opera, FireFox
 
