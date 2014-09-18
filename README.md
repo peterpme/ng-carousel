@@ -19,7 +19,7 @@ Add the dependency in your Angular's project dependency arguments:
 
 ```js
 var app = angular.module('MyApp', [
-  'angular-carousel-directive'
+  'angular-carousel'
 ]);
 ```
 
